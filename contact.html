@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Markhor Tech offers expert Web Development, Python Automation, and Graphic Design services. Build your digital empire with us.">
+<meta name="keywords" content="Web Development, Python, Graphic Design, Markhor Tech, Aoun Jafferi, Portfolio">
+<meta name="author" content="Aoun Jafferi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Markhor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="wrapper">
+        <nav>
+
+              <a href="index.html" class="logo">
+             <img src="logo.png" alt="Markhor Tech Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+            </ul>
+            <div class="nav-actions">
+                <label for="theme-toggle" class="toggle-label">
+                    <i class="fas fa-adjust"></i>
+                </label>
+                <a href="#signin" class="btn-signin">Sign In</a>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <header class="page-header">
+            <h1>Get In <span>Touch</span></h1>
+            <p>Ready to start a new project? Let's build something heavy and professional together.</p>
+        </header>
+
+        <section class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p class="info-intro">Fill up the form and I will get back to you within 24 hours.</p>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>Whatsapp</h4>
+                            <p>+92 305 6006655</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>markhor.tech@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/aoun-jafferi-9b8b98339"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group-row">
+                        <div class="input-box">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Markhor">
+                        </div>
+                        <div class="input-box">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Tech">
+                        </div>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="markhor.tech@gmail.com">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Write your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-main" style="width: 100%; border-radius: 5px;">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+
+         <div style="text-align: center; padding-bottom: 2rem; color: var(--text-sec); font-size: 1.1rem;">
+         Made by Aoun Jafferi with <span style="color: red;">❤️</span> in Pakistan
+         </div>
+
+        <footer>
+            <p>&copy; 2025 Markhor Designs. All Rights Reserved.</p>
+        </footer>
+
+        <div id="signin" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h2>Sign In</h2>
+
+                <div class="social-login">
+            <button class="btn-social google">
+            <i class="fab fa-google"></i> Continue with Google
+            </button>
+             </div>
+
+              <div class="divider-text"><span>OR</span></div>
+              
+                <form>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <a href="#" class="btn-main" style="width: 100%; text-align: center;">Login</a>
+                </form>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-sec);">
+                Don't have an account? 
+                <a href="#signup" style="color: var(--accent); font-weight: bold;">Sign Up</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="signup" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h2>Create Account</h2>
+
+        <div class="social-login">
+    <button class="btn-social google">
+        <i class="fab fa-google"></i> Sign up with Google
+    </button>
+    <button class="btn-social facebook">
+        <i class="fab fa-facebook-f"></i> Sign up with Facebook
+    </button>
+</div>
+
+<div class="divider-text"><span>OR</span></div>
+        <form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="********">
+            </div>
+            <button class="btn-main" style="width: 100%; text-align: center; border: none;">Register</button>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-sec);">
+                Already have an account? 
+                <a href="#signin" style="color: var(--accent); font-weight: bold;">Login</a>
+            </p>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

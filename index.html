@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Markhor Tech offers expert Web Development, Python Automation, and Graphic Design services. Build your digital empire with us.">
+<meta name="keywords" content="Web Development, Python, Graphic Design, Markhor Tech, Aoun Jafferi, Portfolio">
+<meta name="author" content="Aoun Jafferi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Markhor Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="wrapper">
+
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Markhor Tech Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <label for="theme-toggle" class="toggle-label">
+                    <i class="fas fa-adjust"></i>
+                </label>
+                <a href="#signin" class="btn-signin">Sign In</a>
+            </div>
+        </nav>
+        <section class="hero hero-with-bg">
+            <div class="hero-content">
+                <h1>Building <span>Digital Empires</span></h1>
+                <p>Expert Web Development, Graphic Design, and Python Automation Solutions. Precision engineering meets artistic vision.</p>
+                <a href="portfolio.html" class="btn-main">View Work</a>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2 class="section-title"><span>Expertise</span></h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Heavy, scalable websites using HTML5, CSS3, and JavaScript frameworks. Full responsiveness guaranteed.</p>
+                </div>
+                <div class="card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python & Automation</h3>
+                    <p>Custom scripts, data analysis, and backend logic. Optimizing workflows with high-efficiency code.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-pen-nib"></i>
+                    <h3>Graphic Design</h3>
+                    <p>CorelDRAW and Adobe Suite mastery. Creating brand identities, logos, and UI assets with precision.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>MS Office Expert</h3>
+                    <p>Advanced data visualization, document formatting, and complex reporting solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title"><span>Featured Work</span></h2>
+            <div class="portfolio-grid">
+                <div class="project p1">
+                    <div class="overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="project p2">
+                    <div class="overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </div>
+                <div class="project p3">
+                    <div class="overlay">
+                        <h3>Data Automation</h3>
+                        <p>Python Scripting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding-bottom: 2rem; color: var(--text-sec); font-size: 1.1rem;">
+            Made by Aoun Jafferi with <span style="color: red;">❤️</span> in Pakistan
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Markhor Tech. All Rights Reserved.</p>
+        </footer>
+
+        <div id="signin" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close-btn">&times;</a>
+                <h2>Sign In</h2>
+
+                <div class="social-login">
+            <button class="btn-social google">
+            <i class="fab fa-google"></i> Continue with Google
+            </button>
+             </div>
+
+              <div class="divider-text"><span>OR</span></div>
+
+                <form>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <a href="#" class="btn-main" style="width: 100%; text-align: center;">Login</a>
+                </form>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-sec);">
+                Don't have an account? 
+                <a href="#signup" style="color: var(--accent); font-weight: bold;">Sign Up</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="signup" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h2>Create Account</h2>
+
+        <div class="social-login">
+    <button class="btn-social google">
+        <i class="fab fa-google"></i> Sign up with Google
+    </button>
+    <button class="btn-social facebook">
+        <i class="fab fa-facebook-f"></i> Sign up with Facebook
+    </button>
+</div>
+
+<div class="divider-text"><span>OR</span></div>
+        <form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="********">
+            </div>
+            <button class="btn-main" style="width: 100%; text-align: center; border: none;">Register</button>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-sec);">
+                Already have an account? 
+                <a href="#signin" style="color: var(--accent); font-weight: bold;">Login</a>
+            </p>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
