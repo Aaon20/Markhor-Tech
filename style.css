@@ -12,12 +12,20 @@
     --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
+html {
+    font-size: 14px; /* Default 16px hota hai, humne 14px kar diya */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+img {
+    max-width: 100%; /* Image screen se bari na ho */
+    height: auto;
 }
 
 /* --- THEME LOGIC (NO JS) --- */
@@ -880,4 +888,52 @@ footer {
 /* Theme Toggle Support for Divider */
 #theme-toggle:checked ~ .wrapper .divider-text span {
     background: #f1f5f9; /* Light theme match */
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS FIX (SIZE CONTROL)
+   ========================================= */
+
+@media (max-width: 992px) {
+    /* Tablets aur chote laptops ke liye */
+    html {
+        font-size: 13px; /* Mazeed thora chota */
+    }
+    .container {
+        padding: 4rem 5%; /* Side ki jagah kam ki */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Phones ke liye */
+    html {
+        font-size: 12px; /* Mobile par font size aur chota */
+    }
+
+    /* Hero Section (Jo building wala hissa hai) */
+    .hero {
+        height: auto;
+        padding: 6rem 1rem 4rem 1rem;
+        min-height: 80vh; /* Pura screen na gheray */
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem; /* Heading ka size control kiya */
+    }
+    
+    /* Side padding kam ki taake content kate nahi */
+    .container {
+        padding: 3rem 1.5rem;
+    }
+
+    /* Cards ka size adjust kiya */
+    .grid-cards, .portfolio-grid {
+        grid-template-columns: 1fr; /* Mobile par aik line mein aik card */
+        gap: 1.5rem;
+    }
+
+    /* Hero Image Margin Fix */
+    .hero-with-bg {
+        margin-top: 90px;
+    }
 }
