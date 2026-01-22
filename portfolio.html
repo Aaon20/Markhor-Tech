@@ -16,26 +16,33 @@
     <input type="checkbox" id="theme-toggle">
 
     <div class="wrapper">
-        <nav>
 
-             <a href="index.html" class="logo">
-             <img src="logo.png" alt="Markhor Tech Logo">
-            </a>
+            <nav>
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Markhor Tech Logo">
+    </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
-            </ul>
-            <div class="nav-actions">
-                <label for="theme-toggle" class="toggle-label">
-                    <i class="fas fa-adjust"></i>
-                </label>
-                <a href="#signin" class="btn-signin">Sign In</a>
-            </div>
-        </nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="aboutme.html">About</a></li> <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-only"><a href="#signin">Sign In</a></li> 
+    </ul>
+
+    <div class="nav-actions">
+        <label for="theme-toggle" class="toggle-label">
+            <i class="fas fa-adjust"></i>
+        </label>
+        <a href="#signin" class="btn-signin desktop-only">Sign In</a>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</nav>
+
 <br>
 <br>
         <header class="page-header">
