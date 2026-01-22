@@ -937,3 +937,72 @@ footer {
         margin-top: 90px;
     }
 }
+
+/* =========================================
+   MOBILE MENU (HAMBURGER) STYLES
+   ========================================= */
+
+/* Default: Hamburger chupana aur Mobile items chupana */
+.hamburger { display: none; cursor: pointer; }
+.mobile-only { display: none; }
+
+/* --- MOBILE VIEW (768px se kam screen par) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Hamburger Icon Show Karein */
+    .hamburger {
+        display: block;
+        margin-left: 15px;
+    }
+    
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background-color: var(--text-main);
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    /* 2. Desktop Buttons Chupayen */
+    .desktop-only { display: none; }
+    .mobile-only { display: block; margin-top: 1rem; }
+
+    /* 3. Main Menu (Side Drawer) */
+    .nav-links {
+        position: fixed;
+        right: -100%; /* Screen se bahir (Hidden) */
+        top: 80px;    /* Header ke neechay se shuru ho */
+        height: calc(100vh - 80px);
+        background-color: var(--bg-color); /* Theme color */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 60%; /* Menu ki chorai */
+        padding-top: 3rem;
+        transition: 0.4s ease-in-out; /* Smooth Slide */
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        z-index: 999;
+        border-left: 1px solid var(--accent);
+    }
+
+    /* Jab JS se 'active' class lagay gi to Menu andar aye ga */
+    .nav-links.active {
+        right: 0; 
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    /* Hamburger Animation (Cross ban jana) */
+    .hamburger.toggle .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.toggle .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.toggle .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
